@@ -6,9 +6,8 @@ Repositorio del grupo. Partir de este esqueleto. No borrar la estructura de `src
 
 | Nombre | Mail | GitHub |
 | Sebastian Goldenberg  | sebastiangoldenberg01@gmail.com  | Sebastiangolden  |
-| Lucas Escobar | lucscobar.88@gmail.com | Luks882 |
+| Lucas Escobar | lucscobar.88@gmail.com | luks882 |
 | Ulises Vieyra | uliivieyra@gmail.com | VieyraUlises |
-|  |  |  |
 
 **Tema elegido:** Biblioteca musical
 
