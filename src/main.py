@@ -1,4 +1,5 @@
 from src.config import TEMA
+from src.dominio.canciones import catalogo  # Importamos el catálogo de canciones
 
 TEMAS = {
     "pokedex": "Pokédex",
@@ -27,6 +28,12 @@ def mostrar_menu():
     print("0. Salir")
 
 
+def listar_catalogo():
+    print("\n--- Catálogo de canciones ---")
+    for c in catalogo:
+        print(f"{c['id']}. {c['titulo']} - {c['artista']} ({c['anio']}, {c['version']})")    
+
+
 def main():
     if TEMA not in TEMAS:
         print("Seteá TEMA en src/config.py: 'pokedex', 'recetario' o 'musica'.")
@@ -38,7 +45,9 @@ def main():
         opcion = input("> ").strip()
         if opcion == "0":
             print("Chau.")
-        elif opcion in {"1", "2", "3", "4", "5", "6", "7", "8", "9"}:
+        elif opcion == "1":
+            listar_catalogo()
+        elif opcion in {"2", "3", "4", "5", "6", "7", "8", "9"}:
             pendiente()
         else:
             print("Opción inválida.")
